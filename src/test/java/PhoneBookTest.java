@@ -50,9 +50,8 @@ public class PhoneBookTest {
     public void testPrintAllNames() {
         phoneBook.add("Misha", "+79851754235");
         phoneBook.add("Masha", "+79259754875");
-        phoneBook.add("Petia", "+78159032465");
         phoneBook.add("Alex", "+79818345987");
-        String expected = ("Misha, +79851754235\nMasha, +79259754875\nPetia, +78159032465\nAlex, +79818345987");
+        String expected = "[Alex, Masha, Misha]";
         Assertions.assertEquals(expected, phoneBook.printAllNames());
     }
 }
