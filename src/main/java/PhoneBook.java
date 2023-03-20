@@ -15,7 +15,14 @@ public class PhoneBook {
         return contactsList.size();
     }
 
-    public String findByNumber(String phoneNumber){
-        return null;
+    public String findByNumber(String phoneNumber) {
+        String name = "";
+        for (String k : contactsList.keySet()) {
+            if (contactsList.get(k).equals(phoneNumber)) {
+                name = k;
+                break;
+            }
+        }
+        return name;
     }
 }
