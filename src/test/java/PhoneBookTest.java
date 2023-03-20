@@ -29,7 +29,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testFindByNumber(){
+    public void testFindByNumber() {
         phoneBook.add("Misha", "+79851754235");
         String expected = "Misha";
         String numberValue = "+79851754235";
@@ -37,7 +37,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testFindByName(){
+    public void testFindByName() {
         phoneBook.add("Misha", "+79851754235");
         phoneBook.add("Masha", "+79259754875");
         phoneBook.add("Petia", "+78159032465");
