@@ -14,4 +14,8 @@ public class PhoneBook {
             throw new RuntimeException("The name cannot be null");// Имя не может быть нулевым
         return contactsList.size();
     }
+
+    public String findByNumber(String phoneNumber){
+        return null;
+    }
 }
